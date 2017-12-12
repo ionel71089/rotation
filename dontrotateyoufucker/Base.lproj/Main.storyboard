@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KS9-F2-F0N">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dontrotateyoufucker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNG-SG-ROA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <color key="backgroundColor" red="0.5506083936754127" green="0.81033811522671717" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uNG-SG-ROA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6V4-AY-V2k"/>
+                            <constraint firstItem="uNG-SG-ROA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="JOO-0K-vvI"/>
+                            <constraint firstItem="uNG-SG-ROA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c3h-b3-Wqy"/>
+                            <constraint firstItem="uNG-SG-ROA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cZv-hq-Wr7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-575" y="309"/>
+        </scene>
+        <!--No rotate pls.-->
+        <scene sceneID="Q8J-zL-Gdm">
+            <objects>
+                <viewController id="ikA-T7-yfe" customClass="ViewController" customModule="dontrotateyoufucker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rva-h9-q7M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHD-uX-flx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeN-iv-H4P">
+                                        <rect key="frame" x="166" y="151" width="43" height="30"/>
+                                        <state key="normal" title="Modal"/>
+                                        <connections>
+                                            <segue destination="KS9-F2-F0N" kind="presentation" id="AfR-LA-RhB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxK-tO-XVV">
+                                        <rect key="frame" x="170" y="189" width="35" height="30"/>
+                                        <state key="normal" title="Push"/>
+                                        <connections>
+                                            <segue destination="ZYD-De-yxL" kind="show" id="P2v-Ie-mAD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.54133191633004663" blue="0.63515639788540545" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lxK-tO-XVV" firstAttribute="top" secondItem="oeN-iv-H4P" secondAttribute="bottom" constant="8" id="e14-gs-cNm"/>
+                                    <constraint firstItem="oeN-iv-H4P" firstAttribute="centerX" secondItem="kHD-uX-flx" secondAttribute="centerX" id="oFx-hc-61c"/>
+                                    <constraint firstItem="lxK-tO-XVV" firstAttribute="centerX" secondItem="kHD-uX-flx" secondAttribute="centerX" id="qsg-qP-xD1"/>
+                                    <constraint firstItem="oeN-iv-H4P" firstAttribute="centerY" secondItem="kHD-uX-flx" secondAttribute="centerY" id="rZL-ZG-gns"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kHD-uX-flx" firstAttribute="top" secondItem="rva-h9-q7M" secondAttribute="top" id="2L1-U4-RIe"/>
+                            <constraint firstItem="kHD-uX-flx" firstAttribute="leading" secondItem="1Zd-3x-Ydw" secondAttribute="leading" id="9WM-iJ-52c"/>
+                            <constraint firstItem="kHD-uX-flx" firstAttribute="trailing" secondItem="1Zd-3x-Ydw" secondAttribute="trailing" id="TTD-TG-yZS"/>
+                            <constraint firstItem="kHD-uX-flx" firstAttribute="height" secondItem="rva-h9-q7M" secondAttribute="height" multiplier="0.5" id="kzb-UK-tqc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Zd-3x-Ydw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="No rotate pls." id="Nej-TZ-ogr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Am-He-zCi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1319" y="895"/>
+        </scene>
+        <!--Rotatey Push Push-->
+        <scene sceneID="HfJ-at-dS9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sv7-c5-rjJ" customClass="RotateyPushPush" customModule="dontrotateyoufucker" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dbe-nN-Ir2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ikA-T7-yfe" kind="relationship" relationship="rootViewController" id="EZn-2h-dms"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8j-3c-O8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-454" y="1107"/>
+        </scene>
+        <!--Rotate, bitch!-->
+        <scene sceneID="GNQ-NT-HRp">
+            <objects>
+                <viewController id="ZYD-De-yxL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYL-7g-pja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGw-7h-r8v">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cib-Ra-lAf">
+                                        <rect key="frame" x="166" y="151" width="43" height="30"/>
+                                        <state key="normal" title="Modal"/>
+                                        <connections>
+                                            <segue destination="Sv7-c5-rjJ" kind="presentation" id="tFt-fr-ibG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enI-eo-tzC">
+                                        <rect key="frame" x="170.5" y="189" width="35" height="30"/>
+                                        <state key="normal" title="Push"/>
+                                        <connections>
+                                            <segue destination="ikA-T7-yfe" kind="show" id="hxe-Kn-ZEE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71403498741032945" green="1" blue="0.65839126764305567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Cib-Ra-lAf" firstAttribute="centerX" secondItem="DGw-7h-r8v" secondAttribute="centerX" id="8fh-St-GHo"/>
+                                    <constraint firstItem="enI-eo-tzC" firstAttribute="centerX" secondItem="DGw-7h-r8v" secondAttribute="centerX" id="JFA-5h-eZk"/>
+                                    <constraint firstItem="Cib-Ra-lAf" firstAttribute="centerY" secondItem="DGw-7h-r8v" secondAttribute="centerY" id="OzV-oI-KlT"/>
+                                    <constraint firstItem="enI-eo-tzC" firstAttribute="top" secondItem="Cib-Ra-lAf" secondAttribute="bottom" constant="8" id="yAg-nf-472"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DGw-7h-r8v" firstAttribute="height" secondItem="PYL-7g-pja" secondAttribute="height" multiplier="0.5" id="7N1-bm-lWz"/>
+                            <constraint firstItem="DGw-7h-r8v" firstAttribute="top" secondItem="PYL-7g-pja" secondAttribute="top" id="JRz-Su-Js9"/>
+                            <constraint firstItem="DGw-7h-r8v" firstAttribute="trailing" secondItem="gSf-RL-O4z" secondAttribute="trailing" id="WeN-6F-QTv"/>
+                            <constraint firstItem="DGw-7h-r8v" firstAttribute="leading" secondItem="gSf-RL-O4z" secondAttribute="leading" id="ixA-EO-TjL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gSf-RL-O4z"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rotate, bitch!" id="5Ox-fh-rmR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="He6-r4-8mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="2043"/>
+        </scene>
+        <!--Rotatey Push Push-->
+        <scene sceneID="jKv-71-TN7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KS9-F2-F0N" customClass="RotateyPushPush" customModule="dontrotateyoufucker" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UWd-ZZ-hTE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZYD-De-yxL" kind="relationship" relationship="rootViewController" id="DoL-mk-wsM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTM-NA-Eqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-186" y="2106"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="P2v-Ie-mAD"/>
+        <segue reference="EZn-2h-dms"/>
+    </inferredMetricsTieBreakers>
+</document>
